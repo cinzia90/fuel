@@ -197,8 +197,35 @@ function setupLightbox() {
   });
 }
 
+// ---- SIRI ----
+function renderSiri() {
+  const base = 'https://cinzia90.github.io/fuel/shortcuts/';
+  const items = [
+    ['Cosa alleno oggi', 'Cosa-alleno-oggi'],
+    ['Cosa mangio a colazione', 'Cosa-mangio-a-colazione'],
+    ['Cosa mangio a pranzo', 'Cosa-mangio-a-pranzo'],
+    ['Cosa mangio per lo spuntino', 'Cosa-mangio-per-lo-spuntino'],
+    ['Cosa mangio per cena', 'Cosa-mangio-per-cena'],
+    ['Qual e l’integrazione', 'Qual-e-l-integrazione'],
+  ];
+  let h = `<h1 class="page">Siri</h1><p class="sub">Aggiungi i comandi, poi chiedili a Siri (anche dall’Apple Watch).</p>`;
+  h += `<div class="card"><h2>Prima volta: 1 passaggio</h2><ul class="nlist">
+    <li><div class="t">1. Apri una volta l’app <b>Comandi</b></div><div class="d">Se non l’hai mai usata, crea un comando qualsiasi e avvialo (serve a sbloccare l’impostazione).</div></li>
+    <li><div class="t">2. Impostazioni → Comandi</div><div class="d">Attiva <b>Consenti comandi non attendibili</b>. Si fa una volta sola.</div></li>
+    <li><div class="t">3. Torna qui e tocca i pulsanti sotto</div><div class="d">Per ognuno: “Aggiungi comando”. Poi dì “Ehi Siri, cosa alleno oggi”.</div></li>
+  </ul></div>`;
+  h += `<div class="siri-list">`;
+  for (const [name, file] of items) {
+    const url = `shortcuts://import-shortcut?url=${encodeURIComponent(base + file + '.shortcut')}&name=${encodeURIComponent(name)}`;
+    h += `<a class="siri-btn" href="${url}"><span class="plus">+</span><span class="lbl">${ESC(name)}</span><span class="go">&rsaquo;</span></a>`;
+  }
+  h += `</div>`;
+  h += `<p class="eaa">Se un pulsante non apre i Comandi, verifica il passaggio 2. In alternativa restano i passi manuali.</p>`;
+  view().innerHTML = h;
+}
+
 // ---- NAV ----
-const TABS = { oggi: renderOggi, allenamento: renderAllenamento, note: renderNote };
+const TABS = { oggi: renderOggi, allenamento: renderAllenamento, note: renderNote, siri: renderSiri };
 function go(tab) {
   document.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-current', t.dataset.tab === tab ? 'true' : 'false'));
   (TABS[tab] || renderOggi)();

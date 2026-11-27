@@ -123,6 +123,13 @@ h1.page { font-size: 25px; margin: 4px 0 2px; font-style: italic; text-transform
 .intg .n { font-weight: 700; flex: 1 1 auto; min-width: 0; overflow-wrap: anywhere; }
 .intg .dose { color: var(--mute); font-size: 13px; text-align: right; flex: 0 1 44%; min-width: 0; overflow-wrap: anywhere; }
 
+/* ---- Siri ---- */
+.siri-list { display:flex; flex-direction:column; gap:10px; margin-bottom:14px; }
+.siri-btn { display:flex; align-items:center; gap:12px; background: var(--card); border:1px solid var(--line); border-left: 3px solid var(--primary); border-radius: 12px; padding: 14px 14px; text-decoration:none; color: var(--text); }
+.siri-btn .plus { width:26px; height:26px; flex:0 0 auto; display:flex; align-items:center; justify-content:center; background: var(--gradient); color:#fff; border-radius:50%; font-weight:800; font-size:18px; }
+.siri-btn .lbl { flex:1 1 auto; font-weight:700; }
+.siri-btn .go { color: var(--mute); font-size:20px; }
+
 /* ---- tabbar ---- */
 .tabbar {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
