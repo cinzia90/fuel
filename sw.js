@@ -1,9 +1,9 @@
 // Service worker Fuel: app installabile e usabile offline.
 // Bump CACHE a ogni modifica dei file per forzare l'aggiornamento.
-const CACHE = 'fuel-v1';
+const CACHE = 'fuel-v2';
 const SHELL = [
   './', './index.html', './styles.css', './app.js', './config.js',
-  './manifest.webmanifest',
+  './manifest.webmanifest', './brand/logo.png',
   './data/ciclizzazione.json', './data/alimentazione.json',
   './data/allenamento.json', './data/integrazione.json',
   './icon/icon-192.png', './icon/icon-512.png'
