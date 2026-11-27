@@ -24,11 +24,13 @@ La soluzione **senza Mac**, funzionante e gratis, e doppia:
 
 | Dispositivo | Tecnologia | Cosa fa |
 |---|---|---|
-| **Apple Watch** | **Comandi (Shortcuts) + Siri** | "dimmi la colazione", "cosa alleno oggi", timer recupero, log peso veloce. Gira sul Watch, senza Mac. |
+| **Apple Watch** | **Comandi (Shortcuts) + Siri** | "dimmi la colazione", "cosa alleno oggi" con **immagine esercizio + serie + recupero** (una schermata per esercizio, Quick Look), timer recupero, log peso veloce. Gira sul Watch, senza Mac. |
 | **iPhone** | **Web-app installabile (PWA)** | Esperienza completa: immagini esercizi, serie/recupero, griglia pesi che aggiorni con un tocco e si salva da sola. |
 
-Sul Watch l'esperienza e "a menu/voce" (limite dei Comandi), non una schermata app su
-misura: e il massimo ottenibile senza Mac. La parte ricca vive sull'iPhone.
+Sul Watch **si vede anche l'immagine dell'esercizio** (azione Quick Look dei Comandi): il
+flusso e "a passi/menu" (una schermata per esercizio, poi Avanti), non un'unica schermata
+scorrevole con tap-sulla-cella come un'app nativa. E il massimo ottenibile senza Mac. La
+parte piu comoda e completa resta sull'iPhone.
 
 Riuso previsto: immagini esercizi e impostazione della schermata pesi dall'app
 **SF Training / schede-palestre** gia realizzata.
