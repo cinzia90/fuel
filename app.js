@@ -198,30 +198,43 @@ function setupLightbox() {
 }
 
 // ---- SIRI ----
+const SIRI_BASE = 'https://cinzia90.github.io/fuel/data/siri/';
 function renderSiri() {
-  const base = 'https://cinzia90.github.io/fuel/shortcuts/';
-  const items = [
-    ['Cosa alleno oggi', 'Cosa-alleno-oggi'],
-    ['Cosa mangio a colazione', 'Cosa-mangio-a-colazione'],
-    ['Cosa mangio a pranzo', 'Cosa-mangio-a-pranzo'],
-    ['Cosa mangio per lo spuntino', 'Cosa-mangio-per-lo-spuntino'],
-    ['Cosa mangio per cena', 'Cosa-mangio-per-cena'],
-    ['Qual e l’integrazione', 'Qual-e-l-integrazione'],
+  const dateItems = [
+    ['Cosa alleno oggi', 'allenamento/'],
+    ['Cosa mangio a colazione', 'colazione/'],
+    ['Cosa mangio a pranzo', 'pranzo/'],
+    ['Cosa mangio per lo spuntino', 'spuntino/'],
+    ['Cosa mangio per cena', 'cena/'],
   ];
-  let h = `<h1 class="page">Siri</h1><p class="sub">Aggiungi i comandi, poi chiedili a Siri (anche dall’Apple Watch).</p>`;
-  h += `<div class="card"><h2>Prima volta: 1 passaggio</h2><ul class="nlist">
-    <li><div class="t">1. Apri una volta l’app <b>Comandi</b></div><div class="d">Se non l’hai mai usata, crea un comando qualsiasi e avvialo (serve a sbloccare l’impostazione).</div></li>
-    <li><div class="t">2. Impostazioni → Comandi</div><div class="d">Attiva <b>Consenti comandi non attendibili</b>. Si fa una volta sola.</div></li>
-    <li><div class="t">3. Torna qui e tocca i pulsanti sotto</div><div class="d">Per ognuno: “Aggiungi comando”. Poi dì “Ehi Siri, cosa alleno oggi”.</div></li>
+  let h = `<h1 class="page">Siri</h1><p class="sub">Crea i comandi nell’app <b>Comandi rapidi</b> (una volta). Poi chiedi a Siri, anche dall’Apple Watch.</p>`;
+  h += `<div class="card"><h2>Come si crea (una volta, poi duplichi)</h2><ul class="nlist">
+    <li><div class="t">1. Comandi rapidi → <b>+</b> → Aggiungi azione</div></li>
+    <li><div class="t">2. Aggiungi <b>Data</b></div><div class="d">(cerca “Data”, lascia “Data corrente”)</div></li>
+    <li><div class="t">3. Aggiungi <b>Formatta data</b></div><div class="d">Formato → <b>Personalizzato</b> → scrivi <b>yyyy-MM-dd</b></div></li>
+    <li><div class="t">4. Aggiungi <b>Testo</b></div><div class="d">Incolla il link copiato qui sotto, poi tocca e inserisci la variabile <b>Data formattata</b>, infine scrivi <b>.txt</b></div></li>
+    <li><div class="t">5. Aggiungi <b>Ottieni contenuti di URL</b></div></li>
+    <li><div class="t">6. Aggiungi <b>Pronuncia testo</b></div></li>
+    <li><div class="t">7. Rinomina col nome della domanda → Fine</div></li>
   </ul></div>`;
-  h += `<div class="siri-list">`;
-  for (const [name, file] of items) {
-    const url = `shortcuts://import-shortcut?url=${encodeURIComponent(base + file + '.shortcut')}&name=${encodeURIComponent(name)}`;
-    h += `<a class="siri-btn" href="${url}"><span class="plus">+</span><span class="lbl">${ESC(name)}</span><span class="go">&rsaquo;</span></a>`;
+  h += `<h2 class="cs-day-title" style="font-size:15px;color:var(--mute);margin:4px 2px 8px">Domande con la data (link da copiare)</h2>`;
+  for (const [name, sub] of dateItems) {
+    h += siriRow(name, SIRI_BASE + sub, true);
   }
-  h += `</div>`;
-  h += `<p class="eaa">Se un pulsante non apre i Comandi, verifica il passaggio 2. In alternativa restano i passi manuali.</p>`;
+  h += `<h2 class="cs-day-title" style="font-size:15px;color:var(--mute);margin:16px 2px 8px">Integrazione (senza data: salta i passi 2-3-4, usa solo Testo col link intero)</h2>`;
+  h += siriRow('Qual e l’integrazione', SIRI_BASE + 'integrazione.txt', false);
   view().innerHTML = h;
+  view().querySelectorAll('.copy-url').forEach(btn => btn.onclick = async () => {
+    try { await navigator.clipboard.writeText(btn.dataset.url); btn.textContent = 'Copiato ✓'; setTimeout(() => btn.textContent = 'Copia', 1400); }
+    catch { btn.textContent = 'Seleziona e copia'; }
+  });
+}
+function siriRow(name, url, dated) {
+  return `<div class="card" style="padding:12px 14px">
+    <div style="font-weight:800;margin-bottom:6px">${ESC(name)}</div>
+    <div class="siri-url">${ESC(url)}${dated ? '<span class="ph-date">[Data]</span>.txt' : ''}</div>
+    <button class="copy-url" data-url="${ESC(url)}">Copia</button>
+  </div>`;
 }
 
 // ---- NAV ----
