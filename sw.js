@@ -1,6 +1,6 @@
 // Service worker Fuel: app installabile e usabile offline.
 // Bump CACHE a ogni modifica dei file per forzare l'aggiornamento.
-const CACHE = 'fuel-v3';
+const CACHE = 'fuel-v4';
 const SHELL = [
   './', './index.html', './styles.css', './app.js', './config.js',
   './manifest.webmanifest', './brand/logo.png',
@@ -24,6 +24,10 @@ self.addEventListener('fetch', e => {
   if (url.pathname.includes('/data/')) {
     e.respondWith(fetch(req).then(r => { caches.open(CACHE).then(c => c.put(req, r.clone())); return r; }).catch(() => caches.match(req)));
   } else {
-    e.respondWith(caches.match(req).then(c => c || fetch(req)));
+    // cache-first; le immagini esercizi e gli asset si salvano al primo caricamento (offline in palestra)
+    e.respondWith(caches.match(req).then(c => c || fetch(req).then(r => {
+      if (r && r.ok) { const cc = r.clone(); caches.open(CACHE).then(cache => cache.put(req, cc)); }
+      return r;
+    })));
   }
 });
