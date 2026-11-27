@@ -62,7 +62,7 @@
           "note": "Focus accorciamento, gamba extraruotata",
           "serie": "2x12",
           "recupero": "",
-          "immagine": "img/exercises/Glute_Kickback.jpg",
+          "immagine": "img/exercises/One-Legged_Cable_Kickback.jpg",
           "ultimo": "23,5",
           "settimane": {
             "1": "23.5"
@@ -105,7 +105,7 @@
           "note": "Top set e back off. 1 sec in massima contrazione nelle serie di back off",
           "serie": "1x8 + 2x10",
           "recupero": "",
-          "immagine": "img/exercises/Seated_Cable_Rows.jpg",
+          "immagine": "img/exercises/Leverage_Iso_Row.jpg",
           "ultimo": "30 - 20",
           "settimane": {
             "1": "40-20"
@@ -153,7 +153,7 @@
           "note": "Cavo ad altezza bacino, focus allungamento",
           "serie": "3x10",
           "recupero": "",
-          "immagine": "img/exercises/Cable_Seated_Lateral_Raise.jpg",
+          "immagine": "img/exercises/Side_Lateral_Raise.jpg",
           "ultimo": "26",
           "settimane": {
             "1": "26"
@@ -179,7 +179,7 @@
           "serie": "4x12",
           "recupero": "",
           "superset": "g2-e7",
-          "immagine": "img/exercises/Barbell_Curl.jpg",
+          "immagine": "img/exercises/Standing_Biceps_Cable_Curl.jpg",
           "ultimo": "54",
           "settimane": {
             "1": "54"
@@ -224,7 +224,7 @@
           "note": "Focus gluteo, anca flessa",
           "serie": "3x10",
           "recupero": "",
-          "immagine": "img/exercises/Hack_Squat.jpg",
+          "immagine": null,
           "ultimo": "60",
           "settimane": {
             "1": "60",
@@ -262,7 +262,7 @@
           "note": "Focus accorciamento. Qui cerchiamo uno stimolo piu sarcoplasmatico: vai alla ricerca di tanto pump tramite un'esecuzione controllata e uno squeeze profondo",
           "serie": "3x15",
           "recupero": "",
-          "immagine": "img/exercises/Glute_Kickback.jpg",
+          "immagine": "img/exercises/One-Legged_Cable_Kickback.jpg",
           "ultimo": "23,5",
           "settimane": {
             "1": "26"
@@ -281,7 +281,7 @@
           "note": "Cavo ad altezza bacino, focus allungamento. Recupero di 1 min tra un braccio e l'altro",
           "serie": "3x10",
           "recupero": "1 min",
-          "immagine": "img/exercises/Cable_Seated_Lateral_Raise.jpg",
+          "immagine": "img/exercises/Side_Lateral_Raise.jpg",
           "ultimo": "26",
           "settimane": {
             "1": "26"
@@ -327,7 +327,7 @@
           "note": "Focus centro schiena. Ogni ripetizione 1 sec in massima contrazione",
           "serie": "2x10",
           "recupero": "",
-          "immagine": "img/exercises/V-Bar_Pulldown.jpg",
+          "immagine": "img/exercises/Seated_Cable_Rows.jpg",
           "ultimo": "54 (non singolo)",
           "settimane": {
             "1": "54"
@@ -361,7 +361,7 @@
           "note": "Mettiti con la carrucola alle spalle e appoggia il gomito sulla struttura dove scorre la carrucola, cosi da massimizzare lo stimolo in allungamento",
           "serie": "",
           "recupero": "",
-          "immagine": "img/exercises/Reverse_Grip_Triceps_Pushdown.jpg",
+          "immagine": "img/exercises/Cable_One_Arm_Tricep_Extension.jpg",
           "ultimo": "",
           "settimane": {}
         }

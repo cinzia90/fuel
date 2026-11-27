@@ -133,7 +133,7 @@ function renderAllenamento() {
 const DUMBBELL = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5v11M4 8.5v7M17.5 6.5v11M20 8.5v7M6.5 12h11"/></svg>`;
 function exerciseCard(ex) {
   const count = DATA.allenamento.settimaneCount || 4;
-  const img = ex.immagine ? `<img src="${ESC(ex.immagine)}" alt="" loading="lazy" />` : `<span class="ph">${DUMBBELL}</span>`;
+  const img = ex.immagine ? `<img src="${ESC(ex.immagine)}" alt="" />` : `<span class="ph">${DUMBBELL}</span>`;
   let h = `<div class="ex" data-ex="${ex.id}">`;
   h += `<div class="ex-top"><div class="ex-img">${img}</div><div class="ex-info">`;
   h += `<div class="name">${ESC(ex.nome)}</div>`;

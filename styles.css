@@ -70,10 +70,10 @@ h1.page { font-size: 25px; margin: 4px 0 2px; font-style: italic; text-transform
 
 /* ---- Allenamento ---- */
 .daypick { display:grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 16px; }
-.daypick button { background: var(--card); border:1px solid var(--line); border-top: 3px solid var(--primary); border-radius: 14px; padding: 14px; text-align:left; color: var(--text); font-family: var(--font); }
-.daypick button .g { font-weight:800; color: var(--primary); font-size: 13px; }
-.daypick button .n { font-weight:700; margin-top:2px; }
-.daypick button .f { color: var(--mute); font-size: 12px; margin-top:2px; }
+.daypick button { display:flex; flex-direction:column; gap:6px; background: var(--card); border:1px solid var(--line); border-top: 3px solid var(--primary); border-radius: 14px; padding: 14px; text-align:left; color: var(--text); font-family: var(--font); }
+.daypick button .g { display:block; font-weight:800; color: var(--primary); font-size: 13px; letter-spacing:.3px; }
+.daypick button .n { display:block; font-weight:700; line-height:1.2; }
+.daypick button .f { display:block; color: var(--mute); font-size: 12px; margin-top:2px; }
 .backlink { background:none; border:none; color: var(--primary); font-weight:700; padding: 0; margin-bottom: 10px; font-size:15px; font-family: var(--font); }
 
 .ex { background: var(--card); border:1px solid var(--line); border-top: 3px solid var(--primary); border-radius: 16px; padding: 14px; margin-bottom: 14px; }
