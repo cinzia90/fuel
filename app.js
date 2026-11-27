@@ -183,6 +183,20 @@ function renderNote() {
   view().innerHTML = h;
 }
 
+// ---- ZOOM immagine (lightbox) ----
+function setupLightbox() {
+  const lb = document.createElement('div');
+  lb.id = 'lightbox'; lb.hidden = true;
+  lb.innerHTML = '<img alt="Esercizio" /><button type="button" class="lb-close" aria-label="Chiudi">&times;</button>';
+  document.body.appendChild(lb);
+  const hide = () => { lb.hidden = true; };
+  lb.addEventListener('click', hide);
+  document.addEventListener('click', e => {
+    const img = e.target.closest('.ex-img img');
+    if (img && img.getAttribute('src')) { lb.querySelector('img').src = img.src; lb.hidden = false; }
+  });
+}
+
 // ---- NAV ----
 const TABS = { oggi: renderOggi, allenamento: renderAllenamento, note: renderNote };
 function go(tab) {
@@ -199,5 +213,6 @@ document.querySelectorAll('.tab').forEach(t => t.onclick = () => go(t.dataset.ta
   await Store.syncFromCloud();
   let tab = 'oggi'; try { tab = localStorage.getItem('fuel.tab') || 'oggi'; } catch {}
   go(tab);
+  setupLightbox();
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
 })();
