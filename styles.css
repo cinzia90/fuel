@@ -91,6 +91,12 @@ h1.page { font-size: 25px; margin: 4px 0 2px; font-style: italic; text-transform
 .ex-rec input { width: 90px; background: var(--field); border:1px solid var(--line); color: var(--text); border-radius: 9px; padding: 7px 9px; font-size: 14px; font-family: var(--font); }
 
 .grid-title { font-size: 11px; letter-spacing:.5px; text-transform: uppercase; color: var(--primary); font-weight:800; margin: 14px 0 8px; }
+.wrow { display:flex; align-items:center; gap:10px; margin-top:8px; }
+.wrow .wlab { width:52px; color:var(--mute); font-size:12px; font-weight:800; flex:0 0 auto; }
+.wrow.ultimo .wlab { color: var(--primary); }
+.winput { flex:1; min-width:0; background:var(--field); border:1px solid var(--line); color:var(--text); border-radius:9px; padding:9px 11px; font-size:14px; font-weight:700; font-family:var(--font); }
+.winput:focus { outline:none; border-color:var(--primary); box-shadow:0 0 0 3px rgba(225,29,56,.22); }
+.winput.ref { color: var(--mute); font-weight:600; font-style: italic; }
 .grid { width:100%; border-collapse: collapse; }
 .grid th, .grid td { text-align:center; padding: 4px; }
 .grid th { color: var(--mute); font-size: 11px; font-weight:700; }
