@@ -124,6 +124,10 @@ h1.page { font-size: 25px; margin: 4px 0 2px; font-style: italic; text-transform
 .intg .dose { color: var(--mute); font-size: 13px; text-align: right; flex: 0 1 44%; min-width: 0; overflow-wrap: anywhere; }
 
 /* ---- Siri ---- */
+.siri-dl { display:flex; flex-direction:column; gap:9px; margin-top:4px; }
+.dl-btn { display:flex; align-items:center; gap:12px; background: var(--card-solid); border:1px solid var(--line); border-left:3px solid var(--primary); border-radius:11px; padding:12px 14px; text-decoration:none; color:var(--text); }
+.dl-btn .plus { width:26px; height:26px; flex:0 0 auto; display:flex; align-items:center; justify-content:center; background: var(--gradient); color:#fff; border-radius:50%; font-weight:800; font-size:17px; }
+.dl-btn .lbl { font-weight:700; }
 .siri-url { font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: var(--text); background: var(--field); border:1px solid var(--line); border-radius: 8px; padding: 8px 10px; word-break: break-all; margin-bottom: 8px; }
 .siri-url .ph-date { color: var(--primary); font-weight:800; }
 .copy-url { background: var(--gradient); color:#fff; border:none; border-radius: 9px; padding: 8px 16px; font-weight:800; font-family: var(--font); font-size: 13px; }

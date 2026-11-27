@@ -199,6 +199,7 @@ function setupLightbox() {
 
 // ---- SIRI ----
 const SIRI_BASE = 'https://cinzia90.github.io/fuel/data/siri/';
+const SC_BASE = 'https://cinzia90.github.io/fuel/shortcuts/';
 function renderSiri() {
   const dateItems = [
     ['Cosa alleno oggi', 'allenamento/'],
@@ -207,8 +208,30 @@ function renderSiri() {
     ['Cosa mangio per lo spuntino', 'spuntino/'],
     ['Cosa mangio per cena', 'cena/'],
   ];
-  let h = `<h1 class="page">Siri</h1><p class="sub">Crea i comandi nell’app <b>Comandi rapidi</b> (una volta). Poi chiedi a Siri, anche dall’Apple Watch.</p>`;
-  h += `<div class="card"><h2>Come si crea (una volta, poi duplichi)</h2><ul class="nlist">
+  const dl = [
+    ['Cosa alleno oggi', 'Cosa-alleno-oggi'],
+    ['Cosa mangio a colazione', 'Cosa-mangio-a-colazione'],
+    ['Cosa mangio a pranzo', 'Cosa-mangio-a-pranzo'],
+    ['Cosa mangio per lo spuntino', 'Cosa-mangio-per-lo-spuntino'],
+    ['Cosa mangio per cena', 'Cosa-mangio-per-cena'],
+    ['Qual e l’integrazione', 'Qual-e-l-integrazione'],
+  ];
+  let h = `<h1 class="page">Siri</h1><p class="sub">Poi chiedi a Siri, anche dall’Apple Watch.</p>`;
+  // VIA RAPIDA (scarica)
+  h += `<div class="card"><h2>Via rapida: scarica i comandi</h2>
+    <p class="meta" style="margin-bottom:10px">Serve attivare <b>una volta</b> un’impostazione:</p>
+    <ul class="nlist">
+      <li><div class="t">1. Apri <b>Comandi rapidi</b> → Galleria → aggiungi un comando qualsiasi e <b>toccalo</b> una volta (serve a sbloccare l’impostazione)</div></li>
+      <li><div class="t">2. Impostazioni → <b>Comandi rapidi</b> → attiva <b>Consenti comandi non attendibili</b></div></li>
+      <li><div class="t">3. Torna qui e tocca <b>Scarica</b>: si apre in Comandi rapidi → <b>Aggiungi comando non attendibile</b></div></li>
+    </ul>
+    <div class="siri-dl">`;
+  for (const [name, file] of dl) {
+    h += `<a class="dl-btn" href="${SC_BASE}${file}.shortcut"><span class="plus">↓</span><span class="lbl">${ESC(name)}</span></a>`;
+  }
+  h += `</div><p class="eaa" style="margin-top:10px">Se dà “formato non valido”, usa la via manuale qui sotto.</p></div>`;
+  // VIA MANUALE
+  h += `<div class="card"><h2>Via manuale (funziona sempre)</h2><ul class="nlist">
     <li><div class="t">1. Comandi rapidi → <b>+</b> → Aggiungi azione</div></li>
     <li><div class="t">2. Aggiungi <b>Data</b></div><div class="d">(cerca “Data”, lascia “Data corrente”)</div></li>
     <li><div class="t">3. Aggiungi <b>Formatta data</b></div><div class="d">Formato → <b>Personalizzato</b> → scrivi <b>yyyy-MM-dd</b></div></li>
