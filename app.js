@@ -227,7 +227,7 @@ function renderSiri() {
     </ul>
     <div class="siri-dl">`;
   for (const [name, file] of dl) {
-    h += `<a class="dl-btn" href="${SC_BASE}${file}.shortcut"><span class="plus">↓</span><span class="lbl">${ESC(name)}</span></a>`;
+    h += `<a class="dl-btn" href="${SC_BASE}${file}.shortcut" download="${file}.shortcut"><span class="plus">↓</span><span class="lbl">${ESC(name)}</span></a>`;
   }
   h += `</div><p class="eaa" style="margin-top:10px">Se dà “formato non valido”, usa la via manuale qui sotto.</p></div>`;
   // VIA MANUALE
