@@ -1,0 +1,17 @@
+{
+  "fonte": "Alimentazione (1).pdf - sezione Integrazione consigliata",
+  "integratori": [
+    { "nome": "Creatina monoidrato", "dosaggio": "7g intra workout; a colazione nei giorni off" },
+    { "nome": "Citrullina malato", "dosaggio": "6-8g intraworkout" },
+    { "nome": "Carboidrati intra-workout (ciclodestrine/maltodestrine)", "dosaggio": "30g durante l'allenamento" },
+    { "nome": "EAA", "dosaggio": "10g intraworkout" },
+    { "nome": "Sale", "dosaggio": "1g" },
+    { "nome": "Omega-3 (EPA + DHA)", "dosaggio": "1g di EPA+DHA a colazione, pranzo e cena" },
+    { "nome": "Multivitaminico/minerale", "dosaggio": "1 dose al giorno secondo etichetta" },
+    { "nome": "Vitamina D3 + K2", "dosaggio": "1000-4000 UI di vitamina D3 al giorno (da adattare agli esami ematici)" },
+    { "nome": "Magnesio bisglicinato", "dosaggio": "200-400mg di magnesio elementare al giorno, preferibilmente la sera" },
+    { "nome": "Collagene idrolizzato + Vitamina C", "dosaggio": "10-15g di collagene + 50-100mg di vitamina C al giorno" },
+    { "nome": "Probiotici", "dosaggio": "2 compresse la mattina" }
+  ],
+  "note": "Riferimento integratori del piano (Lifepro Nutrition). Sezione informativa, modificabile ogni mese coi nuovi PDF."
+}

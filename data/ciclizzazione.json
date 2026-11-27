@@ -1,0 +1,12 @@
+{
+  "descrizione": "Ciclizzazione dei carboidrati. Giorni di tipo A (alto) e B (basso).",
+  "schema": "B.B.B.A (3 giorni bassi + 1 alto), si ripete",
+  "regola": {
+    "dataAncora": "2026-10-26",
+    "tipoAncora": "A",
+    "pattern": ["A", "B", "B", "B"],
+    "nota": "Il tipo del giorno = pattern[(giorni_dalla_dataAncora) mod 4]. Cosi il calcolo continua anche oltre il range dei PDF. Ogni mese la dataAncora/pattern vengono aggiornati dai nuovi PDF."
+  },
+  "rangeDefinito": { "da": "2026-10-26", "a": "2027-01-03" },
+  "fonte": "Calendario_Ciclizzazione.pdf (26/10/2026 - 03/01/2027)"
+}

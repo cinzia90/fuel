@@ -1,0 +1,77 @@
+{
+  "fonte": "Allenamento (1).pdf",
+  "note": "id = chiave stabile per salvare i pesi nel tempo (non cambiarlo tra un mese e l'altro). recupero: vuoto dove il PDF non lo indica (da impostare). immagine: da mappare alle immagini esercizi gia usate nelle altre app.",
+  "giorni": [
+    {
+      "id": "g1",
+      "nome": "G1 Femorali & Quadricipiti",
+      "focus": "Lower Body",
+      "esercizi": [
+        { "id": "g1-e1", "nome": "Stacco gambe tese", "note": "Eccentrica in 3 sec", "serie": "3x10", "recupero": "", "immagine": null },
+        { "id": "g1-e2", "nome": "Abductor", "note": "Pesante, busto in avanti, focus grande gluteo. Eccentrica in 3 sec", "serie": "4x12", "recupero": "", "immagine": null },
+        { "id": "g1-e3", "nome": "Pressa 45 - piedi centro pedana", "note": "Pesanti, accosciata profonda. Eccentrica in 2 sec, mezzo secondo in massima accosciata e spinta concentrica energica. Non perdere l'anteversione del bacino: fermati poco prima", "serie": "3x8/10", "recupero": "", "immagine": null },
+        { "id": "g1-e4", "nome": "Stacco monopodico con manubrio", "note": "Eccentrica e concentrica in 3 sec. Quando scendi spingi il sedere indietro e leggermente all'esterno, cosi da stimolare al massimo anche il piccolo gluteo", "serie": "3x10", "recupero": "", "immagine": null },
+        { "id": "g1-e5", "nome": "Slancio al cavo basso", "note": "Focus accorciamento, gamba extraruotata", "serie": "2x12", "recupero": "", "immagine": null },
+        { "id": "g1-e6", "nome": "Leg curl seduta", "note": "Mantieni l'anteversione del bacino. Eccentrica in 2 sec", "serie": "3x12", "recupero": "", "immagine": null }
+      ]
+    },
+    {
+      "id": "g2",
+      "nome": "G2 Dorso - Spalle - Braccia",
+      "focus": "Upper Body",
+      "esercizi": [
+        { "id": "g2-e1", "nome": "Lat Machine - Tracy bar, presa larghezza spalle", "note": "Top set e back off", "serie": "1x8 + 1x10", "recupero": "", "immagine": null },
+        { "id": "g2-e2", "nome": "Low row", "note": "Top set e back off. 1 sec in massima contrazione nelle serie di back off", "serie": "1x8 + 2x10", "recupero": "", "immagine": null },
+        { "id": "g2-e3", "nome": "Lat pulldown monolaterale", "note": "TUT: 2 sec in eccentrica", "serie": "2x10", "recupero": "", "immagine": null },
+        { "id": "g2-e4", "nome": "Lateral raise hammer", "note": "Eccentrica in 2 sec", "serie": "3x12/15", "recupero": "", "immagine": null },
+        { "id": "g2-e5", "nome": "Lento avanti al Multipower", "note": "", "serie": "3x8/10", "recupero": "", "immagine": null },
+        { "id": "g2-e6", "nome": "Alzate laterali al cavo con cavigliera", "note": "Cavo ad altezza bacino, focus allungamento", "serie": "3x10", "recupero": "", "immagine": null },
+        { "id": "g2-e7", "nome": "SUPERSET - Push Down barra dritta", "note": "Non esagerare con i pesi: devi sempre arrivare a cedimento, a patto di mantenere un'esecuzione perfetta. Focalizzati sul massimizzare il carico interno", "serie": "4x12", "recupero": "", "superset": "g2-e8", "immagine": null },
+        { "id": "g2-e8", "nome": "SUPERSET - Curl barra dritta", "note": "In superset con il Push Down", "serie": "4x12", "recupero": "", "superset": "g2-e7", "immagine": null }
+      ]
+    },
+    {
+      "id": "g3",
+      "nome": "G3 Focus Glutei",
+      "focus": "Lower Body - Glutei",
+      "esercizi": [
+        { "id": "g3-e1", "nome": "Pressa 45 - piedi alti", "note": "In massima accosciata la tibia deve essere perpendicolare alla pedana. Accosciata piu profonda possibile: extraruota leggermente le punte dei piedi e allarga le ginocchia in discesa, cosi da svincolarti dall'addome e avere un'accosciata profonda", "serie": "3x8/10", "recupero": "", "immagine": null },
+        { "id": "g3-e2", "nome": "RDL", "note": "Eccentrica in 3 sec, concentrica esplosiva. Non estendere completamente l'anca", "serie": "3x10", "recupero": "", "immagine": null },
+        { "id": "g3-e3", "nome": "Belt squat", "note": "Focus gluteo, anca flessa", "serie": "3x10", "recupero": "", "immagine": null },
+        { "id": "g3-e4", "nome": "Abductor", "note": "Busto in avanti e anteversione del bacino. Eccentrica in 3 sec", "serie": "4x12", "recupero": "", "immagine": null },
+        { "id": "g3-e5", "nome": "Hip Thrust", "note": "2 sec in massima contrazione", "serie": "3x10", "recupero": "", "immagine": null },
+        { "id": "g3-e6", "nome": "Slancio al cavo basso", "note": "Focus accorciamento. Qui cerchiamo uno stimolo piu sarcoplasmatico: vai alla ricerca di tanto pump tramite un'esecuzione controllata e uno squeeze profondo", "serie": "3x15", "recupero": "", "immagine": null }
+      ]
+    },
+    {
+      "id": "g4",
+      "nome": "G4 Spalle - Dorso - Braccia",
+      "focus": "Upper Body",
+      "esercizi": [
+        { "id": "g4-e1", "nome": "Alzate laterali al cavo con cavigliera", "note": "Cavo ad altezza bacino, focus allungamento. Recupero di 1 min tra un braccio e l'altro", "serie": "3x10", "recupero": "1 min", "immagine": null },
+        { "id": "g4-e2", "nome": "Spinte sopra la testa con manubri - seduta, panca 70", "note": "Fermo isometrico di 2 sec in massimo allungamento: fermati 2 cm sotto al mento", "serie": "3x8/10", "recupero": "", "immagine": null },
+        { "id": "g4-e3", "nome": "Alzate laterali in piedi con manubri", "note": "Concesso un leggero cheating sulle ultime 5 ripetizioni", "serie": "3x15", "recupero": "", "immagine": null },
+        { "id": "g4-e4", "nome": "Rematore con bilanciere", "note": "", "serie": "3x8/10", "recupero": "", "immagine": null },
+        { "id": "g4-e5", "nome": "Pulley con triangolo - trazione allo sterno", "note": "Focus centro schiena. Ogni ripetizione 1 sec in massima contrazione", "serie": "2x10", "recupero": "", "immagine": null },
+        { "id": "g4-e6", "nome": "Lat Machine con Tracy bar", "note": "Eccentrica in 2 sec, concentrica esplosiva", "serie": "3x10", "recupero": "", "immagine": null },
+        { "id": "g4-e7", "nome": "Curl con manubrio su panca 60", "note": "Focus allungamento", "serie": "3x10", "recupero": "", "immagine": null },
+        { "id": "g4-e8", "nome": "Push Down singolo - maniglia girata al contrario", "note": "Mettiti con la carrucola alle spalle e appoggia il gomito sulla struttura dove scorre la carrucola, cosi da massimizzare lo stimolo in allungamento", "serie": "", "recupero": "", "immagine": null }
+      ]
+    }
+  ],
+  "complementare": {
+    "titolo": "Lavoro complementare",
+    "sottotitolo": "Cardio - Polpacci - Core",
+    "voci": [
+      { "id": "c-cardio", "nome": "Cardio", "note": "30 min a digiuno, tutti i giorni tranne la domenica", "volume": "30 min" },
+      { "id": "c-calf", "nome": "Calf", "note": "3 volte a settimana", "volume": "4x20" },
+      { "id": "c-plank", "nome": "Plank", "note": "1 min di tenuta, 1 min di recupero tra le serie", "volume": "3x1 min" },
+      { "id": "c-crunch", "nome": "Crunch machine", "note": "1 sec in massima contrazione", "volume": "3x12" }
+    ]
+  },
+  "noteEsecutive": {
+    "serieDiAvvicinamento": "Ogni esercizio preceduto da adeguate serie di avvicinamento, per preparare il sistema neuromuscolare e arrivare al carico target nelle migliori condizioni, senza generare fatica significativa.",
+    "caricoInterno": "Obiettivo primario: massimizzare il carico interno con esecuzione precisa e controllata (tecnica, stabilita, traiettoria, connessione mente-muscolo), senza sacrificare la qualita per il solo carico esterno.",
+    "recupero": "Gestire il recupero in base all'intensita e alla richiesta sistemica. Non seguire rigidamente il cronometro: ripartire quando si percepisce di poter replicare la performance richiesta."
+  }
+}

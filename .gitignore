@@ -1,0 +1,14 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Build / dipendenze (per quando parte la web-app)
+node_modules/
+dist/
+.angular/
+
+# Segreti
+.env
+*.env

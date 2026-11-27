@@ -1,0 +1,81 @@
+{
+  "fonte": "Alimentazione (1).pdf",
+  "eaa": "Pre nanna + meta mattina: 10g di aminoacidi essenziali (EAA). Uguale per entrambi i giorni.",
+  "giorni": {
+    "A": {
+      "nome": "Giorno A - Alto",
+      "sottotitolo": "Carboidrati alti - 1 giorno ogni 4",
+      "pasti": [
+        {
+          "id": "colazione",
+          "nome": "Pasto 1 - Colazione",
+          "proteine": ["150g albume", "20g proteine in polvere", "150g yogurt greco 0%"],
+          "carboidrati": ["50g crema di riso", "50g riso", "50g gallette", "60g farina d'avena"],
+          "grassi": ["20g burro d'arachidi", "20g frutta secca", "10g olio EVO"]
+        },
+        {
+          "id": "spuntino",
+          "nome": "Pasto 2 - Spuntino",
+          "proteine": ["20g proteine in polvere"],
+          "carboidrati": ["40g crema di riso", "40g gallette", "40g cornflakes"],
+          "grassi": []
+        },
+        {
+          "id": "pranzo",
+          "nome": "Pasto 3 - Pranzo",
+          "proteine": ["120g pollo", "200g albume", "200g yogurt", "150g platessa", "150g merluzzo"],
+          "carboidrati": ["50g riso", "50g gallette", "50g crema di riso", "60g pane"],
+          "grassi": ["10g olio EVO", "20g burro d'arachidi", "20g frutta secca"]
+        },
+        {
+          "id": "cena",
+          "nome": "Pasto 4 - Cena",
+          "proteine": ["100g pollo", "200g albume", "200g yogurt", "120g platessa", "120g merluzzo"],
+          "carboidrati": ["40g riso", "40g gallette", "40g crema di riso", "50g pane"],
+          "grassi": ["15g olio EVO", "30g burro d'arachidi", "30g frutta secca"]
+        }
+      ]
+    },
+    "B": {
+      "nome": "Giorno B - Basso",
+      "sottotitolo": "Carboidrati bassi - 3 giorni ogni 4",
+      "pasti": [
+        {
+          "id": "colazione",
+          "nome": "Pasto 1 - Colazione",
+          "proteine": ["150g albume", "20g proteine in polvere", "150g yogurt greco 0%"],
+          "carboidrati": ["30g gallette", "30g crema di riso"],
+          "grassi": ["20g burro d'arachidi", "20g frutta secca", "10g olio EVO"]
+        },
+        {
+          "id": "spuntino",
+          "nome": "Pasto 2 - Spuntino",
+          "proteine": ["20g proteine in polvere"],
+          "carboidrati": ["40g crema di riso", "40g gallette", "40g cornflakes"],
+          "grassi": []
+        },
+        {
+          "id": "pranzo",
+          "nome": "Pasto 3 - Pranzo",
+          "proteine": ["120g pollo", "200g albume", "200g yogurt", "150g platessa", "150g merluzzo"],
+          "carboidrati": ["1 banana"],
+          "grassi": ["10g olio EVO", "20g burro d'arachidi", "20g frutta secca"]
+        },
+        {
+          "id": "cena",
+          "nome": "Pasto 4 - Cena",
+          "proteine": ["100g pollo", "200g albume", "200g yogurt", "120g platessa", "120g merluzzo"],
+          "carboidrati": ["40g riso", "40g gallette", "40g crema di riso", "50g pane"],
+          "grassi": ["15g olio EVO", "30g burro d'arachidi", "30g frutta secca"]
+        }
+      ]
+    }
+  },
+  "noteImportanti": {
+    "idratazione": "Minimo circa 3L di acqua al giorno.",
+    "sale": "Uso libero e adeguato di sale da cucina in base a sudorazione e attivita.",
+    "verdure": "Libere: volume, micronutrienti e fibra.",
+    "dolcificantiEBevandeZero": "Inseribili liberamente, non influiscono sul bilancio energetico.",
+    "approccio": "Conta il controllo del bilancio totale e la sostenibilita del protocollo, non la demonizzazione dei singoli alimenti."
+  }
+}
