@@ -1,0 +1,4 @@
+# Fuel - sito statico (nessun build). Pubblica la root del repo.
+[build]
+  publish = "."
+  command = ""

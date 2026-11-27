@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <title>Fuel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#121014" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Fuel" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="flame">&#9650;</span> Fuel</div>
+    <div id="day-badge" class="day-badge" hidden></div>
+  </header>
+
+  <main id="view" class="view"><div class="loading">Carico il piano…</div></main>
+
+  <nav class="tabbar">
+    <button class="tab" data-tab="oggi" aria-current="true">
+      <span class="ico">&#9728;</span><span>Oggi</span>
+    </button>
+    <button class="tab" data-tab="allenamento">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5v11M4 8.5v7M17.5 6.5v11M20 8.5v7M6.5 12h11"/></svg></span><span>Allenamento</span>
+    </button>
+    <button class="tab" data-tab="note">
+      <span class="ico">&#9873;</span><span>Note</span>
+    </button>
+  </nav>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
